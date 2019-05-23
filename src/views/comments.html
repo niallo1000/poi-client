@@ -1,0 +1,17 @@
+<template>
+  <require from="../resources/elements/comment-form"></require>
+  <require from="../resources/elements/comment-list"></require>
+  <require from="../resources/elements/total-poid"></require>
+
+  <div class="ui stackable grid">
+    <div class="seven wide column">
+      <comment-form comments.bind="comments"></comment-form>
+    </div>
+    <div class="two wide column">
+      <total-poid></total-poid>
+    </div>
+    <div class="seven wide column">
+      <comment-list comments.bind="comments"></comment-list>
+    </div>
+  </div>
+</template>

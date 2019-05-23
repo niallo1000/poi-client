@@ -1,0 +1,19 @@
+<template>
+  <require from="../resources/elements/poi-list"></require>
+  <require from="../resources/elements/poiadd-form"></require>
+  <require from="../resources/elements/total-poid"></require>
+  <require from="../resources/elements/poi-map"></require>
+
+  <div class="ui stackable grid">
+    <div class="seven wide column">
+      <poiadd-form payment-methods.bind="paymentMethods" comments.bind="comments"></poiadd-form>
+    </div>
+    <div class="two wide column">
+      <total-poid></total-poid>
+    </div>
+    <div class="seven wide column">
+      <poi-map></poi-map>
+      <pois-list pois.bind="pois"></pois-list>
+    </div>
+  </div>
+</template>

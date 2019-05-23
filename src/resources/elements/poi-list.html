@@ -1,0 +1,28 @@
+<template>
+  <div class="ui stacked segment">
+    <h3 class="ui dividing header"> Donations to Date </h3>
+    <table class="ui celled table segment">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Catagory</th>
+        <th>Comment</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr repeat.for="poi of pois">
+        <td> ${poi.name}</td>
+        <td> ${poi.description}</td>
+        <td> ${poi.catagory}</td>
+        <td> ${poi.comment.lastName}, ${poi.comment.firstName}</td>
+        <td>
+          <div>
+            <a href ="/viewPoi/{{_id}}" button class="ui blue submit button inverted black">View</abutton> </a>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</template>

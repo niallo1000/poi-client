@@ -21,8 +21,8 @@ export class PoiService {
     private router: Router
   ) {
     httpClient.configure(http => {
-     // http.withBaseUrl('http://localhost:3000');
-      http.withBaseUrl('https://elated-mechanic-1.glitch.me');
+      http.withBaseUrl('http://localhost:3000');
+     // http.withBaseUrl('https://elated-mechanic-1.glitch.me');
     });
   }
 
